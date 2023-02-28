@@ -14,23 +14,22 @@ function App() {
   }
   const images = [
     {
-        id : 1,
-        src : './public/fondo1.jpg'
+      id: 4,
+      src: `/fondo4.jpg`
     },
     {
-        id : 2,
-        src : './public/fondo2.jpg'
+      id: 2,
+      src: `/fondo2.jpg`
     },
     {
-        id : 3,
-        src : './public/fondo3.jpg'
+      id: 3,
+      src: `/fondo3.jpg`
     },
     {
-        id : 4,
-        src : './public/fondo4.jpg'
-    }
-  ]
-
+      id: 1,
+      src: `/fondo1.jpg`
+    },
+  ];
   
   
   const [currentImage, setCurrentImage] = useState(images[0]);
@@ -43,7 +42,7 @@ function App() {
     backgroundImage: `url(${currentImage.src})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    backgrounPosition: 'center',
+    backgroundPosition: 'center',
     height: '100vh',
   };
   return (
@@ -55,7 +54,7 @@ function App() {
           PhrasesData = { Phrases[Phraseschange] } 
           />
           </div>
-          <button onClick={() => {changeImage(); changePhrases();}}>Leer Tu Fortuna</button>
+          <button onClick={() => {changeImage(); changePhrases();}}>Lee Tu Fortuna</button>
           </div>
     </div>
   )
